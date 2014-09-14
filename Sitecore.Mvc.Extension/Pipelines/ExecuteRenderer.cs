@@ -34,7 +34,7 @@
         Renderer renderer = args.Rendering.Renderer;
         if (renderer != null)
         {
-          if (args is RenderRenderingArgs)
+          if (args is Sitecore.Mvc.Extension.Pipelines.RenderRenderingArgs)
           {
             args.Rendered = this.Render(renderer, args.Writer, (RenderRenderingArgs)args);
           }

@@ -129,14 +129,16 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="layouts\" />
     <Folder Include="lib\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="layouts\Sitecore.Mvc.Extension\EmptyAjaxLayout.cshtml" />
+    <Content Include="Views\Sitecore Mvc Extension\EmptyAjaxLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Sitecore.Mvc.Extension.config" />
     <None Include="Properties\PublishProfiles\Sitecore72.pubxml" />
+    <Content Include="Views\Web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
