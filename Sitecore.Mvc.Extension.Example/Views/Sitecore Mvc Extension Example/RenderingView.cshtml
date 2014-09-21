@@ -1,5 +1,25 @@
 ﻿@using Sitecore.Mvc
+
+<script src="~/Scripts/jquery-2.1.1.js"></script>
+<script>
+    function loadRendering() {
+        jQuery.ajax({
+            url: "?UseAjax=true&PresentationId={6B1BC902-DAEF-484D-BB3D-D51080ECF273}",
+            context: document.body
+        }).done(function (data) {
+            jQuery("#appendHere").append(data);
+        });
+    }
+</script>
+
+
 <div>
     Some text
+</div>
+<a href="#" onclick="loadRendering()">
+    Load rendering 
+</a>
+
+<div id="appendHere">
 </div>
 

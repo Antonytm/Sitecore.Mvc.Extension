@@ -4,7 +4,7 @@
   {
     public static class IDs
     {
-      public static string AjaxEmptyLayout = "";
+      public static string AjaxEmptyLayout = "{ADD4D84C-A9EA-4310-91ED-CA771297AF13}";
     }
 
     public static class Strings
