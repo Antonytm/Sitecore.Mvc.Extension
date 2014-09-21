@@ -24,7 +24,7 @@
       }
       string str = controllerAndAction.Item1;
       string str2 = controllerAndAction.Item2;
-      return new ControllerRenderer { ControllerName = str, ActionName = str2 };
+      return new Sitecore.Mvc.Extension.Presentation.ControllerRenderer { ControllerName = str, ActionName = str2 };
     }
   }
 }
