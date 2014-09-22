@@ -9,7 +9,7 @@
 @Html.Action("RouteValues", "SitecoreMvcExtension", new {ExampleRouteValue1 = "ASP.Net MVC Controller Action with route values"})
 
 <h3>ASP.Net MVC View with view data dictionary</h3>
-@Html.Partial("~/Views/Sitecore Mvc Extension Example/ViewWithRoutValue.cshtml", new {ExampleRouteValue1 = "ASP.Net MVC Controller Action with route values"})
+@Html.Partial("~/Views/Sitecore Mvc Extension Example/ViewWithRoutValue.cshtml", new ViewDataDictionary { { "ExampleRouteValue1", "ASP.Net MVC Controller Action with route values" } })
 
 <h3>Sitecore MVC Placeholder with rendering view</h3>
 @Html.Sitecore().Placeholder("forRendering")
