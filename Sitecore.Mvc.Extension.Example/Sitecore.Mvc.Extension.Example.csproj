@@ -137,7 +137,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Views\Sitecore Mvc Extension Example\LoadingRenderingWithAjax.cshtml" />
-    <Content Include="App_Config\Include\Sitecore.Mvc.Extension.Example.config">
+    <Content Include="App_Config\Include\Sitecore.Mvc.Extension\Sitecore.Mvc.Extension.Example.config">
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\Sitecore72.pubxml" />

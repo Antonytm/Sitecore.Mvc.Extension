@@ -137,7 +137,7 @@
     <Content Include="Views\Sitecore Mvc Extension\EmptyAjaxLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Sitecore.Mvc.Extension.config" />
+    <Content Include="App_Config\Include\Sitecore.Mvc.Extension\Sitecore.Mvc.Extension.config" />
     <None Include="Properties\PublishProfiles\Sitecore72.pubxml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
