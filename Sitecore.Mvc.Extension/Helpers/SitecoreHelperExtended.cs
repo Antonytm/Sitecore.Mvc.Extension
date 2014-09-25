@@ -1,25 +1,22 @@
-﻿namespace Sitecore.Mvc.Extension
+﻿
+namespace Sitecore.Mvc.Extension
 {
-  using System;
-  using System.Collections.Generic;
-  using System.Globalization;
-  using System.IO;
-  using System.Linq;
-  using System.Text;
-  using System.Threading.Tasks;
-  using System.Web;
-  using System.Web.Mvc;
-  using System.Web.Mvc.Ajax;
-  using System.Web.Routing;
   using Sitecore.Data;
   using Sitecore.Data.Items;
   using Sitecore.Diagnostics;
   using Sitecore.Links;
   using Sitecore.Mvc.Common;
+  using Sitecore.Mvc.Extension.Presentation;
   using Sitecore.Mvc.Pipelines;
-  using Sitecore.Mvc.Pipelines.Response.RenderPlaceholder;
-  using System.Web.WebPages;
   using Sitecore.Mvc.Presentation;
+  using System;
+  using System.Collections.Generic;
+  using System.Globalization;
+  using System.IO;
+  using System.Web;
+  using System.Web.Mvc;
+  using System.Web.Mvc.Ajax;
+  using System.Web.Routing;
 
   public class SitecoreHelperExtended : Sitecore.Mvc.Helpers.SitecoreHelper
   {
@@ -99,6 +96,23 @@
     {
       string str = (string)ajaxOptions.GetType().GetMethod("ToJavascriptString").Invoke(ajaxOptions, new object[] { });
       return string.Format(CultureInfo.InvariantCulture, scriptFormat, new object[] { str });
+    }
+
+    /// <summary>
+    /// The edit frame helper: Renders Sitecore Edit Frame
+    /// </summary>
+    /// <param name="dataSource">
+    /// The data source.
+    /// </param>
+    /// <param name="buttons">
+    /// The buttons.
+    /// </param>
+    /// <returns>
+    /// The <see cref="IDisposable"/>.
+    /// </returns>
+    public virtual IDisposable EditFrame(string dataSource = null, string buttons = null)
+    {
+      return new FrameEditor(this.HtmlHelper, dataSource, buttons);
     }
   }
 }

@@ -14,5 +14,11 @@
       public static string UseAjaxParameter = "UseAjax";
       public static string PresentationIdParameter = "PresentationId";
     }
+
+    public static class Paths
+    {
+      public static string HomeItem = "/sitecore/content/home";
+      public static string FrameEditButtons = "/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Default";
+    }
   }
 }

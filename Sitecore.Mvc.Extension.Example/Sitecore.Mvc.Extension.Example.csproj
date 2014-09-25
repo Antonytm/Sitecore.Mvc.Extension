@@ -120,6 +120,7 @@
     <Content Include="web.config" />
     <Content Include="Views\Sitecore Mvc Extension Example\RouteValuesViaPlaceholder.cshtml" />
     <Content Include="Views\Sitecore Mvc Extension Example\ViewWithRoutValue.cshtml" />
+    <Content Include="Views\Sitecore Mvc Extension Example\EditFrame.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

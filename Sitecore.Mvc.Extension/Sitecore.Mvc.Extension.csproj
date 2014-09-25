@@ -123,6 +123,7 @@
     <Compile Include="Pipelines\RenderRenderingArgs.cs" />
     <Compile Include="Presentation\ControllerRenderer.cs" />
     <Compile Include="Presentation\ControllerRunner.cs" />
+    <Compile Include="Presentation\FrameEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
