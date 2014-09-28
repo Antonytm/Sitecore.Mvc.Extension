@@ -40,7 +40,7 @@
           }
           else
           {
-            args.Rendered = this.Render(renderer, args.Writer, args);
+            args.Rendered = base.Render(renderer, args.Writer, args);
           }
         }
       }

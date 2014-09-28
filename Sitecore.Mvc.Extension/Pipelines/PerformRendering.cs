@@ -61,13 +61,6 @@
         this.Render(args.PlaceholderName, args.Writer, args);
     }
 
-    public void Process(RenderPlaceholderExtendedArgs args)
-    {
-      Assert.ArgumentNotNull(args, "args");
-      this.Render(args.PlaceholderName, args.Writer, args);
-    }
-
-
     protected virtual void Render(string placeholderName, TextWriter writer, RenderPlaceholderExtendedArgs args)
     {
       foreach (Rendering rendering in this.GetRenderings(placeholderName, args))

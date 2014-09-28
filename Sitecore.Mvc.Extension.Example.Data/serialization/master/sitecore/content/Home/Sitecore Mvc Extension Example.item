@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
 templatekey: Folder
 
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 254
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{447470F3-9420-44A2-85E8-5CAF36A45D13}"><r id="{758F4334-CEF9-4D96-9535-3EEE1ABBA054}" ph="content" uid="{B2939CF8-4EEA-4F5E-A77D-20C0926C8534}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: a0865fcf-8408-4563-9c8e-28bd5c8bf177
+revision: c6a61f48-f0b6-438d-bccb-ff244a3bece0
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a0865fcf-8408-4563-9c8e-28bd5c8bf177
+c6a61f48-f0b6-438d-bccb-ff244a3bece0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20140914T210950:635463257902174784
+20140928T225736:635475418569026417
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

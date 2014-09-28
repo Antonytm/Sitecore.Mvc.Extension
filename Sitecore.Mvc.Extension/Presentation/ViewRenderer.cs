@@ -12,7 +12,7 @@ using Sitecore.StringExtensions;
 
 namespace Sitecore.Mvc.Extension.Presentation
 {
-  public class ViewRenderer:Sitecore.Mvc.Presentation.ViewRenderer
+  public class ViewRenderer : Sitecore.Mvc.Presentation.ViewRenderer
   {
     public void Render(TextWriter writer, RouteValueDictionary routeValueDictionary)
     {
@@ -32,13 +32,13 @@ namespace Sitecore.Mvc.Extension.Presentation
       }
       catch (Exception exception)
       {
-        string str3 = "Error while rendering view: '{0}'".FormatWith(new object[] {absoluteViewPath});
+        string str3 = "Error while rendering view: '{0}'".FormatWith(new object[] { absoluteViewPath });
         if (Model != null)
         {
           Type type = Model.GetType();
-          str3 = str3 + " (model: '{0}, {1}')".FormatWith(new object[] {type.FullName, type.Assembly.GetName().Name});
+          str3 = str3 + " (model: '{0}, {1}')".FormatWith(new object[] { type.FullName, type.Assembly.GetName().Name });
         }
-        throw new InvalidOperationException(str3 + ".{0}".FormatWith(new object[] {Environment.NewLine}), exception);
+        throw new InvalidOperationException(str3 + ".{0}".FormatWith(new object[] { Environment.NewLine }), exception);
       }
       if (str2 != null)
       {
