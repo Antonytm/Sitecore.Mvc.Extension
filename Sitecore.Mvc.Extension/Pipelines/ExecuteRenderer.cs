@@ -54,7 +54,14 @@
       }
       else
       {
-        renderer.Render(writer);
+        if (renderer is Presentation.ViewRenderer)
+        {
+          ((Presentation.ViewRenderer)renderer).Render(writer, args.RouteValues);
+        }
+        else
+        {
+          renderer.Render(writer);    
+        }
       }
       return true;
     }

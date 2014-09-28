@@ -1,17 +1,15 @@
 ﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Extension
 <!DOCTYPE html>
 
 <html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-    <body>
-        <h1>
-            Header
+<body>
+    <form id="mainform" method="post" runat="server">
+        <h1>Header
         </h1>
         <div>
-            @Html.Sitecore().Placeholder("content")
+            @Html.SitecoreExtended().Placeholder("content",new{ a = "b"})
         </div>
-    </body>
+    </form>
+</body>
 </html>

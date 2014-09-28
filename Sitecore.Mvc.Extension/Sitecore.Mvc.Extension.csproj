@@ -118,12 +118,14 @@
     <Compile Include="Pipelines\ExecuteRenderer.cs" />
     <Compile Include="Pipelines\GetAjaxLayoutRendering.cs" />
     <Compile Include="Pipelines\GetControllerRenderer.cs" />
+    <Compile Include="Pipelines\GetViewRenderer.cs" />
     <Compile Include="Pipelines\PerformRendering.cs" />
     <Compile Include="Pipelines\RenderPlaceholderArgs.cs" />
     <Compile Include="Pipelines\RenderRenderingArgs.cs" />
     <Compile Include="Presentation\ControllerRenderer.cs" />
     <Compile Include="Presentation\ControllerRunner.cs" />
     <Compile Include="Presentation\FrameEditor.cs" />
+    <Compile Include="Presentation\ViewRenderer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -137,7 +139,9 @@
     <Content Include="Views\Sitecore Mvc Extension\EmptyAjaxLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\Sitecore.Mvc.Extension\Sitecore.Mvc.Extension.config" />
+    <Content Include="App_Config\Include\Sitecore.Mvc.Extension\Sitecore.Mvc.Extension.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\Sitecore72.pubxml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>

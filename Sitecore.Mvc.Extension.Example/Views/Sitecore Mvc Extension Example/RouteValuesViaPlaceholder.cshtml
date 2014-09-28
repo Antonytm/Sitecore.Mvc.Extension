@@ -1,7 +1,8 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Extension
-<h2>Route Values Via Placeholder</h2>
+<h1>Route Values Via Placeholder</h1>
 
+<h2>ASP.Net MVC</h2>
 <h3>ASP.Net MVC Controller Action without route values</h3>
 @Html.Action("RouteValues", "SitecoreMvcExtension")
 
@@ -11,14 +12,17 @@
 <h3>ASP.Net MVC View with view data dictionary</h3>
 @Html.Partial("~/Views/Sitecore Mvc Extension Example/ViewWithRoutValue.cshtml", new ViewDataDictionary { { "ExampleRouteValue1", "ASP.Net MVC Controller Action with route values" } })
 
+<h2>Sitecore MVC</h2>
+
 <h3>Sitecore MVC Placeholder with rendering view</h3>
 @Html.Sitecore().Placeholder("forRendering")
 
 <h3>Sitecore MVC Placeholder with controller action rendering</h3>
 @Html.Sitecore().Placeholder("forControllerAction")
 
-<h3>Sitecore MVC Placeholder with rendering view</h3>
+<h2>Sitecore MVC Extension</h2>
+<h3>Sitecore MVC  Extension Placeholder with rendering view</h3>
 @Html.SitecoreExtended().Placeholder("extendedForRendering", new {ExampleRouteValue1 = "Sitecore MVC Placeholder with rendering view"})
 
-<h3>Sitecore MVC Placeholder with controller action rendering</h3>
+<h3>Sitecore MVC Extension Placeholder with controller action rendering</h3>
 @Html.SitecoreExtended().Placeholder("extendedForControllerAction", new {ExampleRouteValue1 = "Sitecore MVC Placeholder with controller action rendering"})
