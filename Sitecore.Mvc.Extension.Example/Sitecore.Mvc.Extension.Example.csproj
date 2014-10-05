@@ -40,8 +40,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -64,6 +66,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\SitecoreMvcExtension.cs" />
+    <Compile Include="Models\SampleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +96,7 @@
     <Content Include="Views\Sitecore Mvc Extension Example\ViewWithRoutValue.cshtml" />
     <Content Include="Views\Sitecore Mvc Extension Example\EditFrame.cshtml" />
     <Content Include="Views\Sitecore Mvc Extension Example\Index.cshtml" />
+    <Content Include="Views\Sitecore Mvc Extension Example\ModelTranslation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sitecore.Mvc.Extension\Sitecore.Mvc.Extension.csproj">

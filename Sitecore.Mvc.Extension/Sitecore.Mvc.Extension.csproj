@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Helpers\DisplayNameAttribute.cs" />
     <Compile Include="Helpers\HtmlHelperExtension.cs" />
     <Compile Include="Helpers\SitecoreHelperExtended.cs" />
     <Compile Include="Helpers\TypeHelper.cs" />

@@ -1,0 +1,11 @@
+﻿@using Sitecore.Mvc.Extension
+@model Sitecore.Mvc.Extension.Example.Models.SampleModel
+
+@using (Ajax.BeginForm("ModelTranslation", "SitecoreMvcExtension", null, null))
+{
+    @Html.LabelFor(m => m.Name)
+    @Html.TextBoxFor(m => m.Name)
+    @Html.ValidationMessageFor(m => m.Name)    
+    
+    <input type="submit" value="Submit"/>
+}
